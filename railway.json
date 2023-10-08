@@ -5,7 +5,7 @@
     "buildCommand": "pip install -r requirements.txt"
   },
   "deploy": {
-    "startCommand": "python manage.py migrate && python manage.py collectstatic --noinput && gunicorn --timeout 500 terraespectral_ml_api.wsgi",
+    "startCommand": "python manage.py migrate && gunicorn --timeout 500 terraespectral_ml_api.wsgi",
     "restartPolicyType": "ON_FAILURE",
     "restartPolicyMaxRetries": 10
   }
