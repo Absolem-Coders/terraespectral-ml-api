@@ -1,1 +1,1 @@
-web: gunicorn 'terraespectral_ml_api.wsgi
+web: gunicorn 'terraespectral_ml_api.wsgi'
