@@ -7,6 +7,17 @@ from sklearn.ensemble import RandomForestClassifier
 import pandas as pd
 import os
 
+class AiModelView(APIView):
+    def get(self, request, *args, **kwargs):
+        extension = '.pickle'
+        directory_path = os.path.dirname(__file__)
+        
+        ores = [f.replace('.pickle', '') for f in os.listdir(directory_path) if f.endswith(extension)]
+        out = {'ores': ores}
+        
+        return JsonResponse(out) 
+
+
 class AiListView(APIView):
     def get(self, request, *args, **kwargs):
 
