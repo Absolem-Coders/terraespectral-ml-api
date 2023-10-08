@@ -39,7 +39,7 @@ class AiListView(APIView):
                 predict = rf.predict(predict_X)
 
                 if predict[0] == 1:
-                    pins.append((predict_X['latitude'][0], predict_X['longitude'][0]))
+                    pins.append({'latitude': predict_X['latitude'][0], 'longitude': predict_X['longitude'][0]})
 
         ai_data = {
             'ore': ore,
@@ -48,4 +48,3 @@ class AiListView(APIView):
         }
 
         return JsonResponse(ai_data)
-
