@@ -4,5 +4,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('mlapi.urls')),  # 'seu_app' é o nome do seu aplicativo
+    path('api/', include('mlapi.urls')),
 ]
