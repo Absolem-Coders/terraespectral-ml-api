@@ -3,4 +3,4 @@ build:
   steps:
     - name: Install Dependencies
       run: |
-        pip install random2 pickle-mixin scikit-learn pandas djangorestframework
+        pip install -r requirements.txt
