@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'mlapi',
     'rest_framework',
-    'corsheaders',
     ]
 
 MIDDLEWARE = [
@@ -50,8 +49,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
-    'django.middleware.common.CommonMiddleware',
 ]
 
 ROOT_URLCONF = 'terraespectral_ml_api.urls'
@@ -110,8 +107,6 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-CORS_ORIGIN_ALLOW_ALL = True
-
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
@@ -127,4 +122,3 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 ALLOWED_HOSTS = ['*']
 CSRF_TRUSTED_ORIGINS = ['https://terraespectral-ml-api.up.railway.app']
-CORS_ALLOW_HEADERS = '*'
