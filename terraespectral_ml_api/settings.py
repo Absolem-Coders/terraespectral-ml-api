@@ -118,39 +118,33 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 CORS_ALLOWED_ORIGINS = [
-    'https://terraespectral-web.up.railway.app',
-    "http://localhost:8000",
+    'https://terraespectral-ml-api.up.railway.app',
+                        'https://terraespectral-web.up.railway.app',
+                        'https://terraespectral-api.up.railway.app',
+                        'http://localhost',
 ]
 
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOW_ALL_ORIGINS = True
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://terraespectral-ml-api.up.railway.app',
+                        'https://terraespectral-web.up.railway.app',
+                        'https://terraespectral-api.up.railway.app',
+                        'http://localhost',]
 CSRF_TRUSTED_ORIGINS = ['https://terraespectral-ml-api.up.railway.app',
                         'https://terraespectral-web.up.railway.app',
                         'https://terraespectral-api.up.railway.app',
-                        'http://localhost:5173',
+                        'http://localhost',
                         ]
 CSRF_COOKIE_SECURE = False
 CSRF_COOKIE_SAMESITE = None
 CORS_ORIGIN_ALLOW_ALL = True
-CORS_ALLOW_METHODS = [
-'DELETE',
-'GET',
-'OPTIONS',
-'PATCH',
-'POST',
-'PUT',
-]
-CORS_ALLOW_HEADERS = [
-'accept',
-'accept-encoding',
-'authorization',
-'content-type',
-'dnt',
-'origin',
-'user-agent',
-'x-csrftoken',
-'x-requested-with',
+CORS_ALLOW_METHODS = ['*']
+CORS_ALLOW_HEADERS = ['*']
+CORS_ORIGIN_WHITELIST = [
+    'https://terraespectral-ml-api.up.railway.app',
+                        'https://terraespectral-web.up.railway.app',
+                        'https://terraespectral-api.up.railway.app',
+                        'http://localhost',
 ]
