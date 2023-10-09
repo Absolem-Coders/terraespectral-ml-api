@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'mlapi',
     'rest_framework',
-        'corsheaders',
+    'corsheaders',
 
     ]
 
