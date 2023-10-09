@@ -25,8 +25,6 @@ SECRET_KEY = 'django-insecure-yb6ciz!ggfon2iyd#ef835z#6b0mvay&+i_y#ma@i2dmy_is1o
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -121,9 +119,8 @@ USE_TZ = True
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CORS_ALLOWED_ORIGINS = [
-    'https://spectral.earth',  # Add any other allowed origins as needed
-]
-
+CORS_ALLOW_ALL_ORIGINS = True
 ALLOWED_HOSTS = ['*']
 CSRF_TRUSTED_ORIGINS = ['https://terraespectral-ml-api.up.railway.app']
+CSRF_COOKIE_SECURE = False
+CSRF_COOKIE_SAMESITE = None
