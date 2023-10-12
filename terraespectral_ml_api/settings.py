@@ -121,6 +121,9 @@ CORS_ALLOWED_ORIGINS = [
     'https://terraespectral-ml-api.up.railway.app',
                         'https://terraespectral-web.up.railway.app',
                         'https://terraespectral-api.up.railway.app',
+                        'http://terraespectral-ml-api.up.railway.app',
+                        'http://terraespectral-web.up.railway.app',
+                        'http://terraespectral-api.up.railway.app',
                         'http://localhost',
 ]
 
@@ -131,10 +134,16 @@ CORS_ALLOW_ALL_ORIGINS = True
 ALLOWED_HOSTS = ['https://terraespectral-ml-api.up.railway.app',
                         'https://terraespectral-web.up.railway.app',
                         'https://terraespectral-api.up.railway.app',
+                        'http://terraespectral-ml-api.up.railway.app',
+                        'http://terraespectral-web.up.railway.app',
+                        'http://terraespectral-api.up.railway.app',
                         'http://localhost',]
 CSRF_TRUSTED_ORIGINS = ['https://terraespectral-ml-api.up.railway.app',
                         'https://terraespectral-web.up.railway.app',
                         'https://terraespectral-api.up.railway.app',
+                        'http://terraespectral-ml-api.up.railway.app',
+                        'http://terraespectral-web.up.railway.app',
+                        'http://terraespectral-api.up.railway.app',
                         'http://localhost',
                         ]
 CSRF_COOKIE_SECURE = False
@@ -146,5 +155,8 @@ CORS_ORIGIN_WHITELIST = [
     'https://terraespectral-ml-api.up.railway.app',
                         'https://terraespectral-web.up.railway.app',
                         'https://terraespectral-api.up.railway.app',
+                        'http://terraespectral-ml-api.up.railway.app',
+                        'http://terraespectral-web.up.railway.app',
+                        'http://terraespectral-api.up.railway.app',
                         'http://localhost',
 ]
