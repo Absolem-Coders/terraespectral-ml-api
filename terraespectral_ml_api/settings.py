@@ -131,13 +131,10 @@ CORS_ALLOWED_ORIGINS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOW_ALL_ORIGINS = True
-ALLOWED_HOSTS = ['https://terraespectral-ml-api.up.railway.app',
-                        'https://terraespectral-web.up.railway.app',
-                        'https://terraespectral-api.up.railway.app',
-                        'http://terraespectral-ml-api.up.railway.app',
-                        'http://terraespectral-web.up.railway.app',
-                        'http://terraespectral-api.up.railway.app',
-                        'http://localhost',]
+ALLOWED_HOSTS = ['terraespectral-ml-api.up.railway.app',
+                        'terraespectral-web.up.railway.app',
+                        'terraespectral-api.up.railway.app',
+                        'localhost',]
 CSRF_TRUSTED_ORIGINS = ['https://terraespectral-ml-api.up.railway.app',
                         'https://terraespectral-web.up.railway.app',
                         'https://terraespectral-api.up.railway.app',
